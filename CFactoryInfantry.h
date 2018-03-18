@@ -9,6 +9,7 @@ public:
 	~CFactoryInfantry() = default;
 
 	static CInfantry* create(Warriortype _warriortype);
+	static CInfantry Del();
 
 private:
 

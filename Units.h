@@ -35,6 +35,7 @@ public:
 	//virtual void setAttackRange(int _attackrange);
 	virtual void setCord(CLocation _cord);
 	virtual void info();
+	
 
 protected:
 	int Health;

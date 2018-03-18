@@ -1,4 +1,4 @@
-//#include <iostream>
+#include <iostream>
 #include "Units.h"
 
 CLocation::CLocation() : X(0), Y(0) {};
@@ -7,9 +7,10 @@ CLocation::CLocation(int _x, int _y) : X(_x), Y(_y) {};
 
 void Units::info()
 {
-	//std::cout << "H = " << Health << "; D = " << Damage << "; A = " << Armor << "; pos : " << Cord.X << " " << Cord.Y;
+	std::cout << "H = " << Health << "; D = " << Damage << "; A = " << Armor << "; pos : " << Cord.X << " " << Cord.Y;
 	return;
 }
+
 //геттеры
 int Units::getHealth()
 {

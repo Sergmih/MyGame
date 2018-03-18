@@ -10,8 +10,8 @@ enum Warriortype
 };
 
 const int InfantryUserHealth = 100;
-const int InfantryComputerHealth = 105;
-const int InfantryDamage = 34;
+const int InfantryComputerHealth = 120;
+const int InfantryDamage = 40;
 const int InfantryArmor = 5;
 
 class CInfantry : public CWarrior

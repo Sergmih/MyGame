@@ -16,3 +16,4 @@ CInfantry* CFactoryInfantry::create(Warriortype _warriortype)
 	}
 	}
 }
+
