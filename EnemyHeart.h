@@ -21,9 +21,9 @@ public:
 		return instance;
 	}
 
-	unsigned int HeartHP;    // Прочность
-	unsigned int HeartDmg;   // Кол-во урона каждую секунду
-	unsigned int HeartArmor; // Броня
+	unsigned int HeartHP;    
+	unsigned int HeartDmg;   
+	unsigned int HeartArmor; 
 };
 
 #endif
