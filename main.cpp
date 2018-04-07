@@ -1,6 +1,7 @@
+#include <iostream>
 
-#include "test.h"
-int main(int argc, char *argv[]) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+int main()
+{
+  std::cout << "Hello, it is a console game\n";
+  return 0;
 }
