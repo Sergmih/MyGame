@@ -1,6 +1,6 @@
 #ifndef ENEMYHEART_H
 #define ENEMYHEART_H
-
+// Синглтон
 class EnemyHeart
 {
 private:
@@ -21,9 +21,9 @@ public:
 		return instance;
 	}
 
-	unsigned int HeartHP;    
-	unsigned int HeartDmg;   
-	unsigned int HeartArmor; 
+	unsigned int HeartHP;
+	unsigned int HeartDmg;
+	unsigned int HeartArmor;
 };
 
 #endif
