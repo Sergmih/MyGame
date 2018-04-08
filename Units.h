@@ -21,21 +21,20 @@ public:
 	{}
 	virtual ~Units() = default;
 
-	virtual void attack(const CLocation _cord) = 0;
+	virtual void attack(const CLocation &_cord) = 0;
 
-	int getHealth();
-	int getArmor();
-	int getDamage();
+	int getHealth() const;
+	int getArmor() const;
+	int getDamage() const;
 	//int getAttackRange();
-	CLocation getCord();
+	CLocation getCord() const;
 
 	virtual void setHealth(int _health);
 	virtual void setArmor(int _armor);
 	virtual void setDamage(int _damage);
 	//virtual void setAttackRange(int _attackrange);
 	virtual void setCord(CLocation _cord);
-	virtual void info();
-	
+
 
 protected:
 	int Health;

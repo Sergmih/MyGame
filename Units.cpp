@@ -5,15 +5,15 @@ CLocation::CLocation() : X(0), Y(0) {};
 
 CLocation::CLocation(int _x, int _y) : X(_x), Y(_y) {};
 
-int Units::getHealth()
+int Units::getHealth() const
 {
 	return Health;
 }
-int Units::getArmor()
+int Units::getArmor() const
 {
 	return Armor;
 }
-int Units::getDamage()
+int Units::getDamage() const
 {
 	return Damage;
 }
@@ -21,7 +21,7 @@ int Units::getDamage()
 //{
 //	return AttackRange;
 //}
-CLocation Units::getCord()
+CLocation Units::getCord() const
 {
 	return Cord;
 }

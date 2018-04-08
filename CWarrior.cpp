@@ -1,11 +1,10 @@
 #include "CWarrior.h"
 
-void CWarrior::attack(CLocation _cord)
+void CWarrior::attack(const CLocation &_cord)
 {
-	//Алгоритм нанесения урона противнику
+	//Р°С‚Р°РєРѕРІР°С‚СЊ РѕР±СЉРµРєС‚ СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё _cord
 }
 void CWarrior::move(CLocation _cord)
 {
-	//Передвинуться на место _cord
+	//РїРµСЂРµРјРµСЃС‚РёС‚СЊСЃСЏ РЅР° С‚РѕС‡РєСѓ _cord
 }
-

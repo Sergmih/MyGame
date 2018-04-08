@@ -10,7 +10,7 @@ public:
 	~CWarrior() = default;
 
 	void move(CLocation _cord);
-	virtual void attack(CLocation _cord);
+	virtual void attack(const CLocation &_cord);
 
 
 };
