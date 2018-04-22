@@ -8,7 +8,7 @@ public:
 	CFactoryInfantry() = default;
 	~CFactoryInfantry() = default;
 
-	static CInfantry* create(Warriortype _warriortype);
+	static CInfantry* create(char _warriortype, CLocation cord);
 	static CInfantry Del();
 
 private:

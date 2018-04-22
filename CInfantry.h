@@ -3,6 +3,7 @@
 
 #include "CWarrior.h"
 
+
 enum Warriortype
 {
 	userwar,
@@ -18,7 +19,7 @@ class CInfantry : public CWarrior
 {
 public:
 	CInfantry() = default;
-	CInfantry(Warriortype _warriortype);
+	CInfantry(char _warriortype, CLocation cord);
 	~CInfantry() = default;
 
 };

@@ -1,5 +1,5 @@
-#ifndef UNITS_H
-#define UNITS_H
+#pragma once
+
 
 class CLocation
 {
@@ -16,9 +16,12 @@ class Units
 {
 public:
 	Units() = default;
-	Units(unsigned int hp, unsigned int arm, unsigned int dmg, CLocation cord) :
-		Health(hp), Armor(arm), Damage(dmg), Cord(cord)
-	{}
+	Units(unsigned int hp, unsigned int arm, unsigned int dmg, CLocation cord){
+		Health = hp;
+		Armor = arm;
+		Damage = dmg;
+		Cord = cord;
+	}
 	virtual ~Units() = default;
 
 	virtual void attack(const CLocation &_cord) = 0;
@@ -42,7 +45,6 @@ protected:
 	int Damage;
 	//int AttackRange;
 	CLocation Cord;
+	char Symbonmap;
 
 };
-
-#endif
