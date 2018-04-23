@@ -1,0 +1,83 @@
+\hypertarget{classCMap}{}\section{Класс C\+Map}
+\label{classCMap}\index{C\+Map@{C\+Map}}
+
+
+Граф связей класса C\+Map\+:
+% FIG 0
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCMap_a5a770d632870a1f1a975de0eb64c42a6}{Show\+\_\+\+Map} ()
+\item 
+char \hyperlink{classCMap_a829f047001ddf0585b8926f6a3236a73}{Get\+\_\+\+Object} (\hyperlink{classCLocation}{C\+Location} cord)
+\item 
+bool \hyperlink{classCMap_a4f35269a043d55836c29108544e0f475}{Is\+\_\+\+Free} (\hyperlink{classCLocation}{C\+Location} cord)
+\item 
+void \hyperlink{classCMap_a6cd9b518727a73a222bab3e1d1485b98}{Add\+\_\+\+Object} (char type, \hyperlink{classCLocation}{C\+Location} cord, \hyperlink{classCWarrior}{C\+Warrior} $\ast$\+\_\+unit)
+\item 
+void \hyperlink{classCMap_a9053e68dafea3a0960d3c36686f2e2da}{Del\+\_\+point} (\hyperlink{classCLocation}{C\+Location} cord)
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCMap}{C\+Map} \& {\bfseries get\+Instance} ()\hypertarget{classCMap_a8472a57ff745f4b1290b5cc70dc728c2}{}\label{classCMap_a8472a57ff745f4b1290b5cc70dc728c2}
+
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ pair$<$ char, \hyperlink{classCWarrior}{C\+Warrior} $\ast$ $>$ $>$ $>$ {\bfseries Game\+\_\+\+Map}\hypertarget{classCMap_af478ec9b317296ac6775d55ae29cc4d8}{}\label{classCMap_af478ec9b317296ac6775d55ae29cc4d8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\index{C\+Map@{C\+Map}!Add\+\_\+\+Object@{Add\+\_\+\+Object}}
+\index{Add\+\_\+\+Object@{Add\+\_\+\+Object}!C\+Map@{C\+Map}}
+\subsubsection[{\texorpdfstring{Add\+\_\+\+Object(char type, C\+Location cord, C\+Warrior $\ast$\+\_\+unit)}{Add_Object(char type, CLocation cord, CWarrior *_unit)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Map\+::\+Add\+\_\+\+Object (
+\begin{DoxyParamCaption}
+\item[{char}]{type, }
+\item[{{\bf C\+Location}}]{cord, }
+\item[{{\bf C\+Warrior} $\ast$}]{\+\_\+unit}
+\end{DoxyParamCaption}
+)}\hypertarget{classCMap_a6cd9b518727a73a222bab3e1d1485b98}{}\label{classCMap_a6cd9b518727a73a222bab3e1d1485b98}
+Функция Добавляет объект на карту\index{C\+Map@{C\+Map}!Del\+\_\+point@{Del\+\_\+point}}
+\index{Del\+\_\+point@{Del\+\_\+point}!C\+Map@{C\+Map}}
+\subsubsection[{\texorpdfstring{Del\+\_\+point(\+C\+Location cord)}{Del_point(CLocation cord)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Map\+::\+Del\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Location}}]{cord}
+\end{DoxyParamCaption}
+)}\hypertarget{classCMap_a9053e68dafea3a0960d3c36686f2e2da}{}\label{classCMap_a9053e68dafea3a0960d3c36686f2e2da}
+Функция удаляет объект на заданных координатах\index{C\+Map@{C\+Map}!Get\+\_\+\+Object@{Get\+\_\+\+Object}}
+\index{Get\+\_\+\+Object@{Get\+\_\+\+Object}!C\+Map@{C\+Map}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Object(\+C\+Location cord)}{Get_Object(CLocation cord)}}]{\setlength{\rightskip}{0pt plus 5cm}char C\+Map\+::\+Get\+\_\+\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Location}}]{cord}
+\end{DoxyParamCaption}
+)}\hypertarget{classCMap_a829f047001ddf0585b8926f6a3236a73}{}\label{classCMap_a829f047001ddf0585b8926f6a3236a73}
+Функция Возвращает объект
+
+Возвращает Объект находящийся на заданных координатах\index{C\+Map@{C\+Map}!Is\+\_\+\+Free@{Is\+\_\+\+Free}}
+\index{Is\+\_\+\+Free@{Is\+\_\+\+Free}!C\+Map@{C\+Map}}
+\subsubsection[{\texorpdfstring{Is\+\_\+\+Free(\+C\+Location cord)}{Is_Free(CLocation cord)}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Map\+::\+Is\+\_\+\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Location}}]{cord}
+\end{DoxyParamCaption}
+)}\hypertarget{classCMap_a4f35269a043d55836c29108544e0f475}{}\label{classCMap_a4f35269a043d55836c29108544e0f475}
+Функция Проверяет пустая ли точка карты\index{C\+Map@{C\+Map}!Show\+\_\+\+Map@{Show\+\_\+\+Map}}
+\index{Show\+\_\+\+Map@{Show\+\_\+\+Map}!C\+Map@{C\+Map}}
+\subsubsection[{\texorpdfstring{Show\+\_\+\+Map()}{Show_Map()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Map\+::\+Show\+\_\+\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCMap_a5a770d632870a1f1a975de0eb64c42a6}{}\label{classCMap_a5a770d632870a1f1a975de0eb64c42a6}
+Функция отображения карты игры
+
+Выводи в строку координаты от 0 до Map\+\_\+\+Width. А в стобец записано
+
+Map\+\_\+\+Height буквенных координат
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+Map.\+h\item 
+C\+Map.\+cpp\end{DoxyCompactItemize}

@@ -1,8 +1,13 @@
 #ifndef ENEMYHEART_H
 #define ENEMYHEART_H
-// Синглтон
+
 class EnemyHeart
 {
+	/**
+  * \brief Синглтон, Сердце противника
+  * \details Реализация синглтона, чтобы не было нескольких копий этого объекта
+  * \details Иначе это приведет к ошибке.
+  */
 private:
 	EnemyHeart()
 	{
@@ -17,7 +22,7 @@ private:
 public:
 	static EnemyHeart& getInstance()
 	{
-		static EnemyHeart  instance;
+		static EnemyHeart instance;
 		return instance;
 	}
 

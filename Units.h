@@ -3,6 +3,9 @@
 
 class CLocation
 {
+	/**
+  * \brief Структура для хранения координат
+  */
 public:
 	CLocation();
 	CLocation(int _x, int _y);
@@ -14,6 +17,11 @@ public:
 
 class Units
 {
+	/**
+  * \brief Базовый класс всех юнитов
+  * \details Реализация основных методов и функций, связанных с hp, damage,
+  * \details armor и координатами
+  */
 public:
 	Units() = default;
 	Units(unsigned int hp, unsigned int arm, unsigned int dmg, CLocation cord){

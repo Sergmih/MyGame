@@ -7,7 +7,7 @@ class CWarrior : public Units
 {
 public:
 	CWarrior() = default;
-	~CWarrior() = default;
+	~CWarrior() {};
 
 	void move(CLocation _cord);
 	virtual void attack(const CLocation &_cord);

@@ -1,0 +1,39 @@
+\hypertarget{classARMY__Interface}{}\section{Класс A\+R\+M\+Y\+\_\+\+Interface}
+\label{classARMY__Interface}\index{A\+R\+M\+Y\+\_\+\+Interface@{A\+R\+M\+Y\+\_\+\+Interface}}
+
+
+Граф наследования\+:A\+R\+M\+Y\+\_\+\+Interface\+:
+% FIG 0
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classARMY__Interface_ae18c1243d8b94987f92977f016921030}{Army\+\_\+\+Move} (char direction)=0
+\begin{DoxyCompactList}\small\item\em Паттерн Компоновщик, собирающий юнитов в Армию \end{DoxyCompactList}\item 
+virtual void {\bfseries Army\+\_\+\+Attack} ()=0\hypertarget{classARMY__Interface_aba58b32924816f4c4b977d1c33a4fcb4}{}\label{classARMY__Interface_aba58b32924816f4c4b977d1c33a4fcb4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\index{A\+R\+M\+Y\+\_\+\+Interface@{A\+R\+M\+Y\+\_\+\+Interface}!Army\+\_\+\+Move@{Army\+\_\+\+Move}}
+\index{Army\+\_\+\+Move@{Army\+\_\+\+Move}!A\+R\+M\+Y\+\_\+\+Interface@{A\+R\+M\+Y\+\_\+\+Interface}}
+\subsubsection[{\texorpdfstring{Army\+\_\+\+Move(char direction)=0}{Army_Move(char direction)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+R\+M\+Y\+\_\+\+Interface\+::\+Army\+\_\+\+Move (
+\begin{DoxyParamCaption}
+\item[{char}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classARMY__Interface_ae18c1243d8b94987f92977f016921030}{}\label{classARMY__Interface_ae18c1243d8b94987f92977f016921030}
+
+
+Паттерн Компоновщик, собирающий юнитов в Армию 
+
+Интерфейс Армии, собирающей воинов в Армиюю После создания
+
+Армии можно двигаться и атаковать одновременно всеми юнитами. 
+
+Замещается в \hyperlink{classCARMY_a3b430ee84e165447b1f8939a6af74597}{C\+A\+R\+MY}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+Army.\+h\end{DoxyCompactItemize}

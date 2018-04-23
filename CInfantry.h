@@ -3,13 +3,9 @@
 
 #include "CWarrior.h"
 
-
-enum Warriortype
-{
-	userwar,
-	computerwar
-};
-
+/**
+* \brief Объявление констант для воинов
+*/
 const int InfantryUserHealth = 100;
 const int InfantryComputerHealth = 120;
 const int InfantryDamage = 40;

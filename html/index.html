@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>MyGame: Документация Игры</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Документация Игры </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h3>Первая часть. Порождение</h3>
+<p>В игре есть несколько объектов: <a class="el" href="classCWarrior.html">CWarrior</a>, <a class="el" href="classCWorkers.html">CWorkers</a>, <a class="el" href="classEnemyHeart.html">EnemyHeart</a>. Воины и рабочие создаются с помощью пораждающего паттерна Фабричный Метод. Данный паттерн уместен здесь потому что у нас и воины и рабочие имеют схожие параметры и наследуются от базового класса <a class="el" href="classUnits.html">Units</a>. Поэтому реализуется общий интерфейс. Так же я оставил возможность расширять возможности. На данные момент существуют только воины ближнего боя, но в планах добавить так же воинов дальнего боя, как будет время.</p>
+<p>Для создания <a class="el" href="classEnemyHeart.html">EnemyHeart</a> я использовал паттерн Синглтон. Он необходим потому что данный объект должен быть един для всех, то есть существовать в единственном экзампляре. Синглтон как раз предостеригает нас от создания копий данного объекта.</p>
+<p>Так же я применил Синглтон для создания <a class="el" href="classCMap.html">CMap</a>. По той же самой причине, что карта должна существовать в единственном экзампляре. Плюс возможность взаимодействовать с картой из любого уголка кода, что тоже необходимо</p>
+<h3>Вторая часть. Структурирование</h3>
+<p>Из структурных паттернов я использовал лишь Компоновщик. Он удобен для объединений воинов в <a class="el" href="classCARMY.html">CARMY</a>. Армия представляет собой дерево, хоть это и дерево высоты 2, потому что не существует никаких мини группировок, таких как отряд, полк и тд. Просто воины собираются в Армию. Один воин уже может являться Армией. Создание Армии добавляет удобства в игру. Обединив воинов в армию, можно одновременно передвигать сразу всех юнитов, а так же атаковать сразу всеми юнитами. Паттерн реализован так, что если необходимо нескольми юнитами из армии сделать какое-либо действие, отличающееся от действия, которое должно сделать вся Армия, то не нужно расформировывать всю Армию. Достаточно лишь удалить воина из армии, после чего все его действия станут индивидуальными.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

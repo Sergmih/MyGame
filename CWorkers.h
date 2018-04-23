@@ -3,6 +3,9 @@
 
 #include "CWarrior.h"
 
+/**
+* \brief Объявление констант для рабочих
+*/
 const int WorkerHealth = 30;
 const int WorkerDamage = 10;
 const int WorkerArmor = 2;

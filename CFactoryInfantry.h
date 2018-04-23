@@ -4,6 +4,10 @@
 #include "CInfantry.h"
 class CFactoryInfantry
 {
+	/**
+  * \brief Фабричный метод для воинов
+  * \details Реализация Фабричного метода, создание и удаление юнитов
+  */
 public:
 	CFactoryInfantry() = default;
 	~CFactoryInfantry() = default;

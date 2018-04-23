@@ -1,0 +1,88 @@
+\hypertarget{classCARMY}{}\section{Класс C\+A\+R\+MY}
+\label{classCARMY}\index{C\+A\+R\+MY@{C\+A\+R\+MY}}
+
+
+Граф наследования\+:C\+A\+R\+MY\+:
+% FIG 0
+
+
+Граф связей класса C\+A\+R\+MY\+:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classCARMY_a5bb6d54c32d42ba500ee25557eaf287e}{Army\+\_\+\+Add} (\hyperlink{classCWarrior}{C\+Warrior} $\ast$\+\_\+unit)
+\begin{DoxyCompactList}\small\item\em Компонент паттерна. Реализация функция для Армии \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCARMY_ad53156c3a9daa3111bedbfdd02ad12d0}{Army\+\_\+\+Remove} (\hyperlink{classCWarrior}{C\+Warrior} $\ast$\+\_\+unit)
+\item 
+virtual void \hyperlink{classCARMY_a361301817cf98edca31bfa5e29551154}{Army\+\_\+\+Attack} ()
+\item 
+virtual void \hyperlink{classCARMY_a3b430ee84e165447b1f8939a6af74597}{Army\+\_\+\+Move} (char direction)
+\begin{DoxyCompactList}\small\item\em Паттерн Компоновщик, собирающий юнитов в Армию \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\index{C\+A\+R\+MY@{C\+A\+R\+MY}!Army\+\_\+\+Add@{Army\+\_\+\+Add}}
+\index{Army\+\_\+\+Add@{Army\+\_\+\+Add}!C\+A\+R\+MY@{C\+A\+R\+MY}}
+\subsubsection[{\texorpdfstring{Army\+\_\+\+Add(\+C\+Warrior $\ast$\+\_\+unit)}{Army_Add(CWarrior *_unit)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+M\+Y\+::\+Army\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Warrior} $\ast$}]{\+\_\+unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCARMY_a5bb6d54c32d42ba500ee25557eaf287e}{}\label{classCARMY_a5bb6d54c32d42ba500ee25557eaf287e}
+
+
+Компонент паттерна. Реализация функция для Армии 
+
+Класс реализует Функции передвижения, атаки, добавления и удаления
+
+воинов в Армию. Хранит воинов в векторе указателей на \hyperlink{classCWarrior}{C\+Warrior} Добавление воина в Армию\index{C\+A\+R\+MY@{C\+A\+R\+MY}!Army\+\_\+\+Attack@{Army\+\_\+\+Attack}}
+\index{Army\+\_\+\+Attack@{Army\+\_\+\+Attack}!C\+A\+R\+MY@{C\+A\+R\+MY}}
+\subsubsection[{\texorpdfstring{Army\+\_\+\+Attack()}{Army_Attack()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+M\+Y\+::\+Army\+\_\+\+Attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCARMY_a361301817cf98edca31bfa5e29551154}{}\label{classCARMY_a361301817cf98edca31bfa5e29551154}
+Нападение Армии
+
+Каждый воин атакует цель, которая находится справа от него, если
+
+там нет противника, то проверяет остальные стороны
+
+Замещает \hyperlink{classARMY__Interface}{A\+R\+M\+Y\+\_\+\+Interface}.
+
+\index{C\+A\+R\+MY@{C\+A\+R\+MY}!Army\+\_\+\+Move@{Army\+\_\+\+Move}}
+\index{Army\+\_\+\+Move@{Army\+\_\+\+Move}!C\+A\+R\+MY@{C\+A\+R\+MY}}
+\subsubsection[{\texorpdfstring{Army\+\_\+\+Move(char direction)}{Army_Move(char direction)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+M\+Y\+::\+Army\+\_\+\+Move (
+\begin{DoxyParamCaption}
+\item[{char}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCARMY_a3b430ee84e165447b1f8939a6af74597}{}\label{classCARMY_a3b430ee84e165447b1f8939a6af74597}
+
+
+Паттерн Компоновщик, собирающий юнитов в Армию 
+
+Интерфейс Армии, собирающей воинов в Армиюю После создания
+
+Армии можно двигаться и атаковать одновременно всеми юнитами. Движение Армии
+
+Каждый воин Армии движется в указанном направлении
+
+Замещает \hyperlink{classARMY__Interface_ae18c1243d8b94987f92977f016921030}{A\+R\+M\+Y\+\_\+\+Interface}.
+
+\index{C\+A\+R\+MY@{C\+A\+R\+MY}!Army\+\_\+\+Remove@{Army\+\_\+\+Remove}}
+\index{Army\+\_\+\+Remove@{Army\+\_\+\+Remove}!C\+A\+R\+MY@{C\+A\+R\+MY}}
+\subsubsection[{\texorpdfstring{Army\+\_\+\+Remove(\+C\+Warrior $\ast$\+\_\+unit)}{Army_Remove(CWarrior *_unit)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+M\+Y\+::\+Army\+\_\+\+Remove (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Warrior} $\ast$}]{\+\_\+unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCARMY_ad53156c3a9daa3111bedbfdd02ad12d0}{}\label{classCARMY_ad53156c3a9daa3111bedbfdd02ad12d0}
+Удаление воина из Армии
+
+Удаление нужно чтобы давать воину индивидуальные команды.
+
+Это поможет лучше планировать сражения
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+Army.\+h\item 
+C\+Army.\+cpp\end{DoxyCompactItemize}

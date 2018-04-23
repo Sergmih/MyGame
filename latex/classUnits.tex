@@ -1,0 +1,136 @@
+\hypertarget{classUnits}{}\section{Класс Units}
+\label{classUnits}\index{Units@{Units}}
+
+
+Граф наследования\+:Units\+:
+% FIG 0
+
+
+Граф связей класса Units\+:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUnits_aedcdb8dcf2621240dfb181ef4ff2b4a4}{Units} ()=default
+\begin{DoxyCompactList}\small\item\em Базовый класс всех юнитов \end{DoxyCompactList}\item 
+{\bfseries Units} (unsigned int hp, unsigned int arm, unsigned int dmg, \hyperlink{classCLocation}{C\+Location} cord)\hypertarget{classUnits_abf8986723d3364bcb5259425dbf46152}{}\label{classUnits_abf8986723d3364bcb5259425dbf46152}
+
+\item 
+virtual void {\bfseries attack} (const \hyperlink{classCLocation}{C\+Location} \&\+\_\+cord)=0\hypertarget{classUnits_ac1ebb86fe771681fd69acf4a6484230a}{}\label{classUnits_ac1ebb86fe771681fd69acf4a6484230a}
+
+\item 
+int \hyperlink{classUnits_a2610c9872b7aacb0887b981012c6798d}{get\+Health} () const 
+\item 
+int \hyperlink{classUnits_a1810fc5c570523b525b590347029ab50}{get\+Armor} () const 
+\item 
+int \hyperlink{classUnits_a99aaacacdbcc72b07d9107dccd39d7eb}{get\+Damage} () const 
+\item 
+\hyperlink{classCLocation}{C\+Location} \hyperlink{classUnits_a0235abadc69db937f1cd7b14a67a70ee}{get\+Cord} () const 
+\item 
+virtual void \hyperlink{classUnits_acf0d93407d94e3686c32829454b430a0}{set\+Health} (int \+\_\+health)
+\item 
+virtual void \hyperlink{classUnits_a4d8f3ac3e7329e010fcd4306afffd7fb}{set\+Armor} (int \+\_\+armor)
+\item 
+virtual void \hyperlink{classUnits_ae41451cd1f7ce591868eefca03a1a1ab}{set\+Damage} (int \+\_\+damage)
+\item 
+virtual void \hyperlink{classUnits_a9e57b88f129d7cb7e2099b76f491e820}{set\+Cord} (\hyperlink{classCLocation}{C\+Location} \+\_\+cord)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Health}\hypertarget{classUnits_a505b6e65d2e889408ab1a554a6fda353}{}\label{classUnits_a505b6e65d2e889408ab1a554a6fda353}
+
+\item 
+int {\bfseries Armor}\hypertarget{classUnits_a69edee5dcdb08be476575842accc0476}{}\label{classUnits_a69edee5dcdb08be476575842accc0476}
+
+\item 
+int {\bfseries Damage}\hypertarget{classUnits_a4f32a0bd5036e7b7aba049be189bc53c}{}\label{classUnits_a4f32a0bd5036e7b7aba049be189bc53c}
+
+\item 
+\hyperlink{classCLocation}{C\+Location} {\bfseries Cord}\hypertarget{classUnits_a69fd0928ed882949217caf1ce7b4fecc}{}\label{classUnits_a69fd0928ed882949217caf1ce7b4fecc}
+
+\item 
+char {\bfseries Symbonmap}\hypertarget{classUnits_aeaaf44ebdd518e270519674b98cb880b}{}\label{classUnits_aeaaf44ebdd518e270519674b98cb880b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\index{Units@{Units}!Units@{Units}}
+\index{Units@{Units}!Units@{Units}}
+\subsubsection[{\texorpdfstring{Units()=default}{Units()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Units\+::\+Units (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classUnits_aedcdb8dcf2621240dfb181ef4ff2b4a4}{}\label{classUnits_aedcdb8dcf2621240dfb181ef4ff2b4a4}
+
+
+Базовый класс всех юнитов 
+
+Реализация основных методов и функций, связанных с hp, damage,
+
+armor и координатами 
+
+\subsection{Методы}
+\index{Units@{Units}!get\+Armor@{get\+Armor}}
+\index{get\+Armor@{get\+Armor}!Units@{Units}}
+\subsubsection[{\texorpdfstring{get\+Armor() const }{getArmor() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Units\+::get\+Armor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classUnits_a1810fc5c570523b525b590347029ab50}{}\label{classUnits_a1810fc5c570523b525b590347029ab50}
+Функция получения Брони противника\index{Units@{Units}!get\+Cord@{get\+Cord}}
+\index{get\+Cord@{get\+Cord}!Units@{Units}}
+\subsubsection[{\texorpdfstring{get\+Cord() const }{getCord() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Location} Units\+::get\+Cord (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classUnits_a0235abadc69db937f1cd7b14a67a70ee}{}\label{classUnits_a0235abadc69db937f1cd7b14a67a70ee}
+Функция получения координат противника\index{Units@{Units}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!Units@{Units}}
+\subsubsection[{\texorpdfstring{get\+Damage() const }{getDamage() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Units\+::get\+Damage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classUnits_a99aaacacdbcc72b07d9107dccd39d7eb}{}\label{classUnits_a99aaacacdbcc72b07d9107dccd39d7eb}
+Функция получения урона противника\index{Units@{Units}!get\+Health@{get\+Health}}
+\index{get\+Health@{get\+Health}!Units@{Units}}
+\subsubsection[{\texorpdfstring{get\+Health() const }{getHealth() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Units\+::get\+Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classUnits_a2610c9872b7aacb0887b981012c6798d}{}\label{classUnits_a2610c9872b7aacb0887b981012c6798d}
+Функция получения здоровья противника\index{Units@{Units}!set\+Armor@{set\+Armor}}
+\index{set\+Armor@{set\+Armor}!Units@{Units}}
+\subsubsection[{\texorpdfstring{set\+Armor(int \+\_\+armor)}{setArmor(int _armor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Units\+::set\+Armor (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+armor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classUnits_a4d8f3ac3e7329e010fcd4306afffd7fb}{}\label{classUnits_a4d8f3ac3e7329e010fcd4306afffd7fb}
+Функция установки брони противника\index{Units@{Units}!set\+Cord@{set\+Cord}}
+\index{set\+Cord@{set\+Cord}!Units@{Units}}
+\subsubsection[{\texorpdfstring{set\+Cord(\+C\+Location \+\_\+cord)}{setCord(CLocation _cord)}}]{\setlength{\rightskip}{0pt plus 5cm}void Units\+::set\+Cord (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Location}}]{\+\_\+cord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classUnits_a9e57b88f129d7cb7e2099b76f491e820}{}\label{classUnits_a9e57b88f129d7cb7e2099b76f491e820}
+Функция установки координат противника\index{Units@{Units}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!Units@{Units}}
+\subsubsection[{\texorpdfstring{set\+Damage(int \+\_\+damage)}{setDamage(int _damage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Units\+::set\+Damage (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+damage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classUnits_ae41451cd1f7ce591868eefca03a1a1ab}{}\label{classUnits_ae41451cd1f7ce591868eefca03a1a1ab}
+Функция установки урона противника\index{Units@{Units}!set\+Health@{set\+Health}}
+\index{set\+Health@{set\+Health}!Units@{Units}}
+\subsubsection[{\texorpdfstring{set\+Health(int \+\_\+health)}{setHealth(int _health)}}]{\setlength{\rightskip}{0pt plus 5cm}void Units\+::set\+Health (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+health}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classUnits_acf0d93407d94e3686c32829454b430a0}{}\label{classUnits_acf0d93407d94e3686c32829454b430a0}
+Функция установки здоровья противника
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Units.\+h\item 
+Units.\+cpp\end{DoxyCompactItemize}

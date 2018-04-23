@@ -4,6 +4,9 @@
 #include "CWorkers.h"
 class CFactoryWorkers
 {
+	/**
+  * \brief Фабричный метод для Рабочих
+  */
 public:
 	CFactoryWorkers() = default;
 	~CFactoryWorkers() = default;
